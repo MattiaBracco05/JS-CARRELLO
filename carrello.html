@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+    <!-- HTML:5 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrello Elettronico Bracco Mattia JS</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col bordi">
+                <div class="row bg-primary">
+                    <div class="col bordi">Q.tà</div>
+                    <div class="col bordi">Descrizione</div>
+                    <div class="col bordi">Prezzo</div>
+                    <div class="col bordi">Azione</div>
+                </div>
+                <div class="row bg-warning">
+                    <div class="col bordi"><input size="2" type="number" value="0" id="monitorQta"></div>
+                    <div class="col bordi" id="monitorNome">Monitor 19" FULL HD</div>
+                    <div class="col bordi">199.99</div>
+                    <div class="col bordi"><input type="button" onclick="carica(this)" value="CARICA" id="monitor"></div>
+                </div>
+                <div class="row bg-success">
+                    <div class="col bordi"><input size="2" type="number" value="0" id="casseQta"></div>
+                    <div class="col bordi" id="casseNome">Casse 200W RMS</div>
+                    <div class="col bordi">149.99</div>
+                    <div class="col bordi"><input type="button" onclick="carica(this)" value="CARICA" id="casse"></div>
+                </div>
+                <div class="row bg-warning">
+                    <div class="col bordi"><input size="2" type="number" value="0" id="tastieraQta"></div>
+                    <div class="col bordi" id="tastieraNome">Tastiera meccanica RGB</div>
+                    <div class="col bordi">29.99</div>
+                    <div class="col bordi"><input type="button" onclick="carica(this)" value="CARICA" id="tastiera"></div>
+                </div>
+                <div class="row bg-success">
+                    <div class="col bordi"><input size="2" type="number" value="0" id="webcamQta"></div>
+                    <div class="col bordi" id="webcamNome">Webcam USB</div>
+                    <div class="col bordi">69.99</div>
+                    <div class="col bordi"><input type="button" onclick="carica(this)" value="CARICA" id="webcam"></div>
+                </div>
+            </div>
+            <div class="col bg-primary bordi" id="carrello">CARRELLO</div>
+        </div>
+    </div>
+
+    <!-- QUESTO VA SEMPRE AL FONDO ! -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
